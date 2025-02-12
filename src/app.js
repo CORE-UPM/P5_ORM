@@ -60,7 +60,7 @@ const main = async () => {
         (await doctorCtrl.indexByPatient(patient2.id))
             .forEach(doctor => console.log(" -", doctor.name));
 
-        // Cambias datos de un paciente y consultarlos despues
+        // Cambiar datos de un paciente y consultarlos despues
         console.log("Cambiar datos de un paciente:");
         let pbefore = await patientCtrl.read(patient3.id);
         await patientCtrl.update(patient3.id, "Ana María", "Garcillán", "012345");
