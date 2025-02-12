@@ -251,7 +251,7 @@ En muy recomendable usar un cliente SQLite
 para verificar que la estructura de las tablas creadas y que los datos
 guardados en ellas con correctos.
 
-Puede usar el cliente que prefiera: **sqlite3**, **Liya**, **SQLiteStudio**, ...
+Puede usar el cliente que prefiera: **sqlite3**, **SQLiteStudio**, **DBeaver**, **Liya**, ...
 
 Veamos cómo se puede hacer usando el cliente **sqlite3**.
 
