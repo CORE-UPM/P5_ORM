@@ -10,13 +10,13 @@
     "githubURL": "CORE-UPM/P5_ORM",
     "serverUrl": "https://aat.dit.upm.es/",
     "courseId": "395",
-    "assignmentId": "8548"
+    "assignmentId": "41286"
 },
   "scripts": {
     "start": "node src/app.js"
   },
   "dependencies": {
-    "autocorector": "^3.5.0",
+    "autocorector": "^4.0.1",
     "mocha": "^7.2.0",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7",
