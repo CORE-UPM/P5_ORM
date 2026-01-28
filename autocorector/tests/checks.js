@@ -5,8 +5,10 @@ const {assert, expect} = require('chai');
 const path = require("path");
 const util = require('util');
 const Utils = require('../utils/testutils');
+const fs = require("fs");
 
-process.env.DATABASE_URL = "sqlite:autocorector.sqlite";
+process.env.DATABASE_CONFIG_PATH = path.resolve(path.join(__dirname, "..", "config", "config.json"));
+const db_file = path.resolve(path.join(__dirname, "..", "..", "autocorector.sqlite"));
 
 let sequelize;
 
@@ -30,7 +32,8 @@ let patient5;
 
 
 const drop_tables = async function () {
-    await sequelize.drop();
+    fs.unlinkSync(db_file);
+    // await sequelize.drop();
 }
 
 const check_tables = async function () {

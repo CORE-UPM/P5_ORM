@@ -7,7 +7,7 @@
 
 # Entrega 5 ORM
 
-Versión: 12 de Febrero de 2025
+Versión: 28 de Enero de 2026
 
 ## 1. Objetivo
 
@@ -19,7 +19,7 @@ Versión: 12 de Febrero de 2025
 
 Para realizar la práctica el alumno deberá tener instalado en su ordenador:
 - Herramienta GIT para gestión de repositorios [Github](https://git-scm.com/downloads)
-- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 20.
+- Entorno de ejecución de javascript [NodeJS](https://nodejs.org/es/download/) versión 22.
 
 ## 3. Descripción de la práctica
 
@@ -71,12 +71,13 @@ El alumno debe completar estos ficheros con la definición los modelos
 de acuerdo al esquema relacional aportado.
 
 - **src/models/index.js**.
-El alumno debe completar este fichero para inicializar un objeto **sequelize**
-con la BBDD a usar, importar las definiones de los modelos, y
-definir las relaciones siguientes:
-  - Relación 1-a-N entre Hospital y Paciente.
-  - Relación N-a-M entre Paciente y Doctor.
-
+El alumno debe completar este fichero para:
+  * Inicializar un objeto **sequelize** con la BBDD a usar.
+    - El fichero con la configuración de la BBDD se proporciona ya hecho en **config/config.json**.
+  * Importar las definiones de los modelos y  definir las relaciones siguientes:
+    - Relación 1-a-N entre Hospital y Paciente.
+    - Relación N-a-M entre Paciente y Doctor.
+  
 - **src/controllers/patient.js**, **src/controllers/hospital.js** y **src/controllers/doctor.js**.
 Contienen las funciones que deberá completar el alumno. 
 Se debe usar el ORM **Sequelize** para 

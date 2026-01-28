@@ -1,0 +1,5 @@
+{
+  "dialect": "sqlite",
+  "storage": "./p5.sqlite",
+  "logging": false
+}
