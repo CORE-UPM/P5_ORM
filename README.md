@@ -113,13 +113,13 @@ son las siguientes:
 > ### create(hospitalId, name, surname, dni)
 > **Descripción:**
 > - Crea un paciente dentro de un hospital.
+>
 > **Parámetros:**
-> - 
 > - hospitalId - id del hospital que se asociara con el paciente creado.
 > - name - Nombre del paciente.
 > - surname - Apellido del paciente.
 > - dni - DNI del paciente.
-> - 
+>
 > **Returns:**
 > - El objeto paciente creado.
 
